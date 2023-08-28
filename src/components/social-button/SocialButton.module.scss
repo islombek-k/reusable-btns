@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 25px;
+
+  .info {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+  }
+}
+
+.filled {
+  background-color: #fff;
+  color: #003073;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.outlined {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  
+  &:hover {
+    opacity: 0.9;
+  }
+}

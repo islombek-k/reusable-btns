@@ -1,0 +1,45 @@
+.button {
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+@mixin classicBtnStyle($bgColor, $color, $hoveredBgColor) {
+  background-color: $bgColor;
+  color: $color;
+  padding: 14px 45px;
+
+  &:hover {
+    background-color: $hoveredBgColor;
+  }
+}
+
+@mixin outlinedBtnStyle($color) {
+  background-color: transparent;
+  border: 1px solid $color;
+  color: $color;
+  padding: 14px 36px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.orangeClassic {
+  @include classicBtnStyle(#e1231f, #fff, #e1221fe0);
+}
+
+.clearOutlined {
+  @include outlinedBtnStyle(#fff);
+}
+
+.blackClassic {
+    @include classicBtnStyle(#000, #fff , #000000e3  )
+}
+
+.blackOutlined {
+    @include outlinedBtnStyle(#000)
+}
